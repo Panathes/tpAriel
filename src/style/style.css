@@ -11,5 +11,70 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: black;
+  /* background: black; */
+}
+
+.gameBackground{
+  position: absolute;
+  height: inherit;
+  width: inherit;
+}
+
+.gameCockpit{
+  width: inherit;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gameChoices{
+  padding: 2%;
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  bottom: 25%;
+  right: 5%;
+  background: red;
+  /* background-image: url();
+  background-image: cover; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gameChoice{
+}
+
+.gameChoices>button{
+  background: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 3% 5%;
+}
+
+.gameChoice1{
+
+}
+
+.gameTextContainer{
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  height: 20vh;
+  background: rgba(100, 100, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameText{
+
+}
+
+.gameTextImg{
+  position: absolute;
+  bottom: 100%;
+  left: 5%;
+  height: 100%;
 }

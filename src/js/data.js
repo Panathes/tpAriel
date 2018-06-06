@@ -182,10 +182,6 @@ var storyMain = [
       {
         text: '*Fin des enregistrement*',
         who: 'ia'
-      },
-      {
-        text: 'echec',
-        who: 'fin'
       }
     ],
     question: '',
@@ -224,10 +220,6 @@ var storyMain = [
       {
         text: '*Fin des enregistrement*',
         who: 'ia'
-      },
-      {
-        text: 'echec',
-        who: 'fin'
       }
     ],
     question: '',
@@ -357,96 +349,214 @@ var storyThird = [
         who: 'ia'
       },
       {
-        text: 'Il y a une zone avec plusieurs cratères, je propose que nous allions voir.',
-        who: 'ia'
-      },
-      {
         text: 'Préparez-vous pour l\'atterrissage !',
         who: 'Tom'
+      },
+      {
+        text: 'Je ne suis pas confiant à propos de cette ile... Nous devrions mettre les masques de protection',
+        who: 'James'
       }
     ],
-    question: 'Quel est le meilleur endroit pour atterrir ?',
+    question: 'Voulez-vous mettre les masques de protection ?',
     answers: [{
-      content: 'Au centre du plus gros des cratères',
-      target: [1, 1]
+      content: 'Oui',
+      target: [2, 1]
     },
     {
-      content: 'Ou un peu plus éloigné',
-      target: [1, 1]
+      content: 'Non',
+      target: [2, 2]
     }]
   },
   {
     animation: {
-      img: './src/img/crater.jpg',
+      img: './src/img/island.jpg',
       css: false
     },
     text: [
       {
-        text: 'Je sors du vaisseau pour faire des analyses',
-        who: 'James'
-      },
-      {
-        text: 'bon, j\'ai fini les prélèvements aux alentours du vaisseau, on attend le retour de TOM et on avisera pour la visite des autres régions.',
-        who: 'James'
-      },
-      {
-        text: 'hé les gars, regardez ce que j\'ai trouvé en visitant les environs',
+        text: 'je n\'en reviens pas.. C\'est magnifique !',
         who: 'Tom'
       },
       {
-        text: 'On dirais un journal de bord, on en saura plus sur les habitants',
+        text: 'Une ile aussi belle.. Comment c\'est possible ?',
         who: 'James'
       },
       {
-        text: 'ia, lis-nous le journal s\'il te plaît',
-        who: 'James'
-      },
-      {
-        text: 'Affirmatif',
-        who: 'ia'
-      },
-      {
-        text: '*La terre est désertée depuis longtemps. Des successions d’invasions extra-terrestres et la menace d\'un virus situé sur une ile fermer au public, loin d\'ici l’ont vidée de ses habitants humains. Les survivants se sont réfugiés sur d’autres planètes*',
-        who: 'ia'
-      },
-      {
-        text: '*Je voulais également quitter cette planète, mais hélas mon état déplorable ne me le permet pas.*',
-        who: 'ia'
-      },
-      {
-        text: '*J\'espère qu\'un jour ma chère et tendre terre natale pourra prospérer de nouveau*',
-        who: 'ia'
-      },
-      {
-        text: '*Fin de lecture*',
-        who: 'ia'
-      },
-      {
-        text: '...',
-        who: 'Tom'
-      },
-      {
-        text: 'les pauvres, entre les invasions et ce virus, ils n\'avaient aucune chance',
+        text: 'C\'est surtout etrange si vous voulez mon avis, on devrait prendre nos precaution.',
         who: 'Vincent'
       },
       {
-        text: 'Je viens de vérifier les prélèvements, aucune trace de virus, mais dans le doute il vaut mieux que l\'on parte de cette planète au plus vite !',
-        who: 'James'
-      },
-      {
-        text: 'Pendant que l\'on quitte la planète, on peut toujours faire un rapport auprès de la société qui nous embauche pour leur faire part des différentes menaces possibles.',
-        who: 'James'
-      },
-      {
-        text: 'Je n\'aurai pas mieux dit ! Bon on déguerpit vite !',
+        text: 'Pour cette raison que on a les masques héhé.',
         who: 'Tom'
       },
       {
-        text: '*Fin des enregistrement*',
+        text: 'Bon c\'est parti, on explore la région et on peut repartir pour explorer d\'autre parti de la planète.',
+        who: 'James'
+      },
+      {
+        text: '*plus tard dans la journee*',
         who: 'ia'
-      }
+      },
+      {
+        text: '*Bon.. j\'ai fais tout les prelevements possible.. Tom ! Arrete de faire le con on est pas venu jouer, reviens dans le vaisseau immediatement.',
+        who: 'James'
+      },
+      {
+        text: 'Rho ca va.. Tu fais quoi Vincent ?',
+        who: 'Tom'
+      },
+      {
+        text: 'Rien de spécial, je fais un Check-up du vaisseau.',
+        who: 'Vincent'
+      },
+      {
+        text: 'Euh.. Par contre James, Pourquoi tes analyses sont en rouges ?',
+        who: 'Vincent'
+      },
+      {
+        text: 'Je vais regarder ça',
+        who: 'James'
+      },
+      {
+        text: 'Oh mon dieu c est pas possible... ',
+        who: 'James'
+      },
+      {
+        text: 'Quoi ?',
+        who: 'Tom'
+      },
+      {
+        text: 'Un virus est présent dans tout les échantillons. Heureusement que on a les masques, son moyen de propagation est par les airs.',
+        who: 'James'
+      },
+      {
+        text: 'Oula ! On a échappé belle',
+        who: 'Tom'
+      },
+      {
+        text: '*Par contre faudra prévenir la société que si ils veulent rendre la planète habitable il y a du boulot qui les attends.*',
+        who: 'Tom'
+      },
+      {
+        text: 'En gros la maintenant on file et on fait un rapport auprès de nos employeurs ?',
+        who: 'Vincent'
+      },
+      {
+        text: 'Tu as tout compris !',
+        who: 'James'
+      },
+      {
+        text: '*Fin des enregistrement *',
+        who: 'ia'
+      },
+      {
+        text: 'succes',
+        who: 'fin'
+      },
     ],
     question: '',
     answers: []
-  }
+  },
+  {
+    animation: {
+      img: './src/img/island.jpg',
+      css: false
+    },
+    text: [
+      {
+        text: 'je n\'en reviens pas.. C\'est magnifique !',
+        who: 'Tom'
+      },
+      {
+        text: 'Une ile aussi belle.. Comment c\'est possible ?',
+        who: 'James'
+      },
+      {
+        text: 'C\'est surtout etrange si vous voulez mon avis, on devrait prendre nos precaution.',
+        who: 'Vincent'
+      },
+      {
+        text: 'blablabla" la planète est vide, comment veut-tu que l\'on cours le moindre risque ?',
+        who: 'Tom'
+      },
+      {
+        text: 'Mais tu raconte quoi sale chien ?! Comment tu peux etre sur de ça ?',
+        who: 'Vincent'
+      },
+      {
+        text: 'L\'ia nous aurait tenu informer de toute menace au alentour, pas vrai ia ? ',
+        who: 'Tom'
+      },
+      {
+        text: 'Bien evidemment',
+        who: 'ia'
+      },
+      {
+        text: 'Bon c\'est decide on va visite les environs.',
+        who: 'Tom'
+      },
+      {
+        text: 'OK. Je vais rester sur le vaisseau, pas envie de prendre le moindre risque.',
+        who: 'Vincent'
+      },
+      {
+        text: 'Quel act de bravoure.. Bon on reviens vite.',
+        who: 'James'
+      },
+      {
+        text: 'Plus tard dans la journee*',
+        who: 'ia'
+      },
+      {
+        text: 'Bon.. j ai fais tout les prelevements possible.. Tom ! Arrete de faire le con on est pas venu jouer, reviens dans le vaisseau immediatement.',
+        who: 'James'
+      },
+      {
+        text: 'Rho ca va.. Il est ou l\'autre gamin ?',
+        who: 'Tom'
+      },
+      {
+        text: 'il s\'est isole dans la salle d armement.',
+        who: 'James'
+      },
+      {
+        text: 'Grande maturite ! Dis moi pourquoi ta machine pour les analyses emets de grand signe rouge ?',
+        who: 'Tom'
+      },
+      {
+        text: 'Je vais voir ça... Oh mon dieu c est pas possible... ',
+        who: 'James'
+      },
+      {
+        text: 'En gros la maintenant on file et on fait un rapport auprès de nos employeurs ?',
+        who: 'Vincent'
+      },
+      {
+        text: 'Il se passe quoi ?',
+        who: 'Tom'
+      },
+      {
+        text: 'Un virus est présent dans tout les échantillons... Il y a de forte chance que nous 2 soyons infecter.',
+        who: 'James'
+      },
+      {
+        text: 'Quoi ?! On est condamnés ?!',
+        who: 'Tom'
+      },
+      {
+        text: 'J\'en ai bien peur...',
+        who: 'James'
+      },
+      {
+        text: '*Fin des enregistrement *',
+        who: 'ia'
+      },
+      {
+        text: 'echec',
+        who: 'fin'
+      },
+    ],
+    question: '',
+    answers: []
+  },
 ]

@@ -326,6 +326,10 @@ var storySecond = [
       {
         text: '*Fin des enregistrement*',
         who: 'ia'
+      },
+      {
+        text: 'echec',
+        who: 'fin'
       }
     ],
     question: '',

@@ -33,7 +33,7 @@ var render = function(array, index){
 
   ui.text.textContent = story.text[0].text;
   ui.textImg.src = './src/img/'+story.text[0].who+'.png';
-  ui.textWho.textContent = story.text[0].who+' :';
+  ui.textWho.textContent = nameInput.value+' :';
   let question = document.createElement('p');
   question.classList.add('storyChoice');
   ui.questionContainer.appendChild(question);
@@ -41,9 +41,16 @@ var render = function(array, index){
   var questionOnce = false;
   ui.textContainer.addEventListener('click', function(){
     if (textCount < story.text.length) {
+      let textWho = story.text[textCount].who;
+      if (textWho === 'ia') {
+        textWho = nameInput.value;
+      }
+      if (textWho === 'fin') {
+        endScreen(story.text[textCount].text);
+      }
       ui.text.textContent = story.text[textCount].text;
       ui.textImg.src = './src/img/'+story.text[textCount].who+'.png';
-      ui.textWho.textContent = story.text[textCount].who+' :';
+      ui.textWho.textContent = textWho+' :';
       textCount++;
     } else if (questionOnce === false) {
       questionOnce = true;
@@ -64,6 +71,25 @@ var render = function(array, index){
       }
     }
   });
-
 }
-render(0, 0);
+
+var endScreen = function(success){
+  var end = document.querySelector('.end');
+  var story = document.querySelector('.story');
+  var endh1 = document.querySelector('.endSumup>h1');
+  var endp = document.querySelector('.endSumup>p');
+  story.style.display = 'none';
+  end.style.display = 'block';
+  endh1.textContent = 'Merci pour votre participation '+nameInput.value+' !';
+  endp.textContent = success;
+}
+
+var nameInput = document.querySelector('.name');
+var start = document.querySelector('.start');
+var form = document.querySelector('.startInput');
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  // console.log(nameInput.value);
+  start.style.display = 'none';
+  render(0, 0);
+})

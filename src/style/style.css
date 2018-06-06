@@ -1,10 +1,16 @@
-.game{
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+  font-size: 1.3rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.story{
   width: 100%;
   height: 100vh;
   position: relative;
 }
 
-.gameContainer{
+.storyContainer{
   height: inherit;
   width: inherit;
   position: absolute;
@@ -14,20 +20,82 @@
   overflow: hidden;
 }
 
-.gameBackground{
+.storyBackground{
   position: absolute;
   height: inherit;
   width: inherit;
 }
 
-.gameCockpit{
+.storyBackAnim{
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  background-image: url(../img/stars.png);
+  background-size: cover;
+}
+
+@keyframes slidein {
+  from {
+    transform: translate(0, 0);
+    height: 5vh;
+    width: 5vh;
+  }
+
+  to {
+    transform: translate(-100vw, 20vh);
+    height: 100vh;
+    width: 100vh;
+  }
+}
+
+.storyBackAnim::after{
+  content: '';
+  position: absolute;
+  transform: translate(-100vw, 20vh);
+  top: 40%;
+  left: 40%;
+  height: 100vh;
+  width: 100vh;
+  border-radius: 50%;
+  background: yellow;
+  animation: 20s linear slidein;
+}
+
+@keyframes slidein2 {
+  from {
+    transform: translate(0, 0);
+    height: 1vh;
+    width: 1vh;
+  }
+
+  to {
+    transform: translate(-10vw, 2vh);
+    height: 10vh;
+    width: 10vh;
+  }
+}
+
+.storyBackAnim::before{
+  content: '';
+  position: absolute;
+  transform: translate(-10vw, 2vh);
+  top: 45%;
+  left: 50%;
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  background: darkblue;
+  animation: 20s linear slidein2;
+}
+
+.storyCockpit{
   width: inherit;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.gameChoices{
+.storyChoices{
   color: white;
   padding: 20px;
   position: absolute;
@@ -43,10 +111,11 @@
   align-items: center;
 }
 
-.gameChoice{
+.storyChoice{
+  text-align: center;
 }
 
-.gameChoices>button{
+.storyChoices>button{
   cursor: pointer;
   color: white;
   background: none;
@@ -55,11 +124,11 @@
   padding: 3% 5%;
 }
 
-.gameChoice1{
+.storyChoice1{
 
 }
 
-.gameTextContainer{
+.storyTextContainer{
   position: absolute;
   bottom: 0;
   width: inherit;
@@ -70,13 +139,57 @@
   align-items: center;
 }
 
-.gameText{
-
+.storyWho{
+  position: absolute;
+  bottom: 15vh;
+  left: 7%;
 }
 
-.gameTextImg{
+.storyText{
+  line-height: 1.8rem;
+  max-width: 80%;
+}
+
+.storyTextImg{
   position: absolute;
   bottom: 100%;
   left: 5%;
   height: 100%;
+}
+
+@keyframes slidein3 {
+  from {
+    bottom: 100vh;
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes slidein4 {
+  from {
+    bottom: 0;
+  }
+
+  to {
+    bottom: 100vh;
+  }
+}
+
+.storyImg{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  bottom: 0;
+  left: 0;
+}
+
+.storyShutter{
+  /* z-index: -1; */
+  animation: 3s linear slidein3;
+}
+
+.storyShutterOver{
+  animation: 3s linear slidein4;
 }

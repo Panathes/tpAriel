@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+  font-size: 1.3rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .story{
   width: 100%;
   height: 100vh;
@@ -106,6 +112,7 @@
 }
 
 .storyChoice{
+  text-align: center;
 }
 
 .storyChoices>button{
@@ -132,8 +139,15 @@
   align-items: center;
 }
 
-.storyText{
+.storyWho{
+  position: absolute;
+  bottom: 15vh;
+  left: 7%;
+}
 
+.storyText{
+  line-height: 1.8rem;
+  max-width: 80%;
 }
 
 .storyTextImg{

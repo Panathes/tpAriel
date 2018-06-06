@@ -1,10 +1,11 @@
-var stories = [storyMain];
+var stories = [storyMain, storySecond];
 var render = function(array, index){
   let ui = {
     background: document.querySelector('.storyBackground'),
     questionContainer: document.querySelector('.storyChoices'),
     text: document.querySelector('.storyText'),
     textContainer: document.querySelector('.storyTextContainer'),
+    textWho: document.querySelector('.storyWho'),
     textImg: document.querySelector('.storyTextImg')
   }
   ui.questionContainer.innerHTML = '';
@@ -32,6 +33,7 @@ var render = function(array, index){
 
   ui.text.textContent = story.text[0].text;
   ui.textImg.src = './src/img/'+story.text[0].who+'.png';
+  ui.textWho.textContent = story.text[0].who+' :';
   let question = document.createElement('p');
   question.classList.add('storyChoice');
   ui.questionContainer.appendChild(question);
@@ -41,6 +43,7 @@ var render = function(array, index){
     if (textCount < story.text.length) {
       ui.text.textContent = story.text[textCount].text;
       ui.textImg.src = './src/img/'+story.text[textCount].who+'.png';
+      ui.textWho.textContent = story.text[textCount].who+' :';
       textCount++;
     } else if (questionOnce === false) {
       questionOnce = true;

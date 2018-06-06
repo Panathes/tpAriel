@@ -182,6 +182,10 @@ var storyMain = [
       {
         text: '*Fin des enregistrement*',
         who: 'ia'
+      },
+      {
+        text: 'echec',
+        who: 'fin'
       }
     ],
     question: '',
@@ -220,6 +224,10 @@ var storyMain = [
       {
         text: '*Fin des enregistrement*',
         who: 'ia'
+      },
+      {
+        text: 'echec',
+        who: 'fin'
       }
     ],
     question: '',

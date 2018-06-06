@@ -78,6 +78,7 @@ var endScreen = function(success){
   var story = document.querySelector('.story');
   var endh1 = document.querySelector('.endSumup>h1');
   var endp = document.querySelector('.endSumup>p');
+  audio.muted = true;
   story.style.display = 'none';
   end.style.display = 'block';
   endh1.textContent = 'Merci pour votre participation '+nameInput.value+' !';
@@ -87,9 +88,10 @@ var endScreen = function(success){
 var nameInput = document.querySelector('.name');
 var start = document.querySelector('.start');
 var form = document.querySelector('.startInput');
+var audio = document.querySelector('audio');
 form.addEventListener('submit', function(e){
   e.preventDefault();
-  // console.log(nameInput.value);
   start.style.display = 'none';
+  audio.autoplay = true;
   render(0, 0);
 })

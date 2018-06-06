@@ -1,4 +1,4 @@
-var stories = [storyMain, storySecond];
+var stories = [storyMain, storySecond, storyThird];
 var render = function(array, index){
   let ui = {
     background: document.querySelector('.storyBackground'),

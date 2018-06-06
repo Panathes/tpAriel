@@ -332,3 +332,109 @@ var storySecond = [
     answers: []
   }
 ]
+
+var storyThird = [
+  {
+    animation: {
+      img: './src/img/shutter.jpg',
+      css: 'storyShutter'
+    },
+    text: [
+      {
+        text: 'Préparation à la rentrée dans l\'atmosphère, fermeture des volets de protection.',
+        who: 'ia'
+      },
+      {
+        text: 'Il y a une zone avec plusieurs cratères, je propose que nous allions voir.',
+        who: 'ia'
+      },
+      {
+        text: 'Préparez-vous pour l\'atterrissage !',
+        who: 'Tom'
+      }
+    ],
+    question: 'Quel est le meilleur endroit pour atterrir ?',
+    answers: [{
+      content: 'Au centre du plus gros des cratères',
+      target: [1, 1]
+    },
+    {
+      content: 'Ou un peu plus éloigné',
+      target: [1, 1]
+    }]
+  },
+  {
+    animation: {
+      img: './src/img/crater.jpg',
+      css: false
+    },
+    text: [
+      {
+        text: 'Je sors du vaisseau pour faire des analyses',
+        who: 'James'
+      },
+      {
+        text: 'bon, j\'ai fini les prélèvements aux alentours du vaisseau, on attend le retour de TOM et on avisera pour la visite des autres régions.',
+        who: 'James'
+      },
+      {
+        text: 'hé les gars, regardez ce que j\'ai trouvé en visitant les environs',
+        who: 'Tom'
+      },
+      {
+        text: 'On dirais un journal de bord, on en saura plus sur les habitants',
+        who: 'James'
+      },
+      {
+        text: 'ia, lis-nous le journal s\'il te plaît',
+        who: 'James'
+      },
+      {
+        text: 'Affirmatif',
+        who: 'ia'
+      },
+      {
+        text: '*La terre est désertée depuis longtemps. Des successions d’invasions extra-terrestres et la menace d\'un virus situé sur une ile fermer au public, loin d\'ici l’ont vidée de ses habitants humains. Les survivants se sont réfugiés sur d’autres planètes*',
+        who: 'ia'
+      },
+      {
+        text: '*Je voulais également quitter cette planète, mais hélas mon état déplorable ne me le permet pas.*',
+        who: 'ia'
+      },
+      {
+        text: '*J\'espère qu\'un jour ma chère et tendre terre natale pourra prospérer de nouveau*',
+        who: 'ia'
+      },
+      {
+        text: '*Fin de lecture*',
+        who: 'ia'
+      },
+      {
+        text: '...',
+        who: 'Tom'
+      },
+      {
+        text: 'les pauvres, entre les invasions et ce virus, ils n\'avaient aucune chance',
+        who: 'Vincent'
+      },
+      {
+        text: 'Je viens de vérifier les prélèvements, aucune trace de virus, mais dans le doute il vaut mieux que l\'on parte de cette planète au plus vite !',
+        who: 'James'
+      },
+      {
+        text: 'Pendant que l\'on quitte la planète, on peut toujours faire un rapport auprès de la société qui nous embauche pour leur faire part des différentes menaces possibles.',
+        who: 'James'
+      },
+      {
+        text: 'Je n\'aurai pas mieux dit ! Bon on déguerpit vite !',
+        who: 'Tom'
+      },
+      {
+        text: '*Fin des enregistrement*',
+        who: 'ia'
+      }
+    ],
+    question: '',
+    answers: []
+  }
+]
